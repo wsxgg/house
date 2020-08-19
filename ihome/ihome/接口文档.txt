@@ -1,0 +1,25 @@
+
+
+接口： 获取图片验证码
+
+描述： 前端访问，可以获取验证码的图片
+
+url:  /api/v1.0/image_code/<image_code_id>
+
+请求方式： GET
+
+传入参数： 
+    格式：路径参数（参数是查询字符串，请求体表单， json， xml）
+    名字                 类型        是否必须        说明
+    image_code_id       字符串          是          验证码图片编号
+
+返回值：
+    格式： 
+    成功时：图片
+
+    异常：json
+    名字         类型        是否必传        说明
+    errno       字符串       否              错误代码
+    errmsg      字符串       否              错误内容
+
+    {"errno": "4001", "errmsg": "save image_code _id failed"}
